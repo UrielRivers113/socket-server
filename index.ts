@@ -1,9 +1,9 @@
-import Server from "./classes/server";
+import Server from './classes/server';
 import router from './routes/router';
 import bodyParser from 'body-parser';
 import cors from 'cors'; //Para que no marque error, ejecutar npm install@types/cors --save-dev
 
-const server = new Server();
+const server = Server.instance;
 
 //body parser
 //Lo que dicen estas lineas es: "lo que sea que me posteen tomalo y genera un objeto de javascript"
